@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="shortcut icon" href="favicon.webp" type="image/x-icon">
+
+    <!-- linked bootstrap for icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <h3 id="home">Home</h3>
+        <h3><a href="https://github.com/Sonu-77">Profile</a></h3>
+    </div>
+
+    <div class="title">
+        <h3>Tic-Tac-Toe</h3>
+    </div>
+
+
+    <div class="game-space">
+        <div class="player-space">
+            <form>
+                <div class="input-space">
+                    <input class="player" id="player1" type="text" placeholder="Player X">
+                    <input class="player" id="player2" type="text" placeholder="Player O">
+                </div>
+                <button id="submit">Submit</button>
+            </form>
+        </div>
+        <div class="declare-winner">winner</div>
+
+        <div class="wooden-bg">
+            <div class="head-bar">
+                <i class="bi bi-info-circle"></i>  
+                <button id="restart">RESET</button>              
+            </div>         
+            <div class="botton-space">
+                <button class="button-box" data-index="0"></button>
+                <button class="button-box" data-index="1"></button>
+                <button class="button-box" data-index="2"></button>
+                <button class="button-box" data-index="3"></button>
+                <button class="button-box" data-index="4"></button>
+                <button class="button-box" data-index="5"></button>
+                <button class="button-box" data-index="6"></button>
+                <button class="button-box" data-index="7"></button>
+                <button class="button-box" data-index="8"></button>      
+            </div>
+        </div>
+        <div class="myname">
+            <h4>Developed by :</h4>
+            <h4>Sonu Kachhap</h4>
+        </div>
+        
+        
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
