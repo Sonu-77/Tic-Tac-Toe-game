@@ -7,6 +7,7 @@
 
 body{
     background-color: #22333b;
+    position: relative;
 }
 
 @media(min-width:1024px){
@@ -52,6 +53,24 @@ body{
        
         width: auto;
         border-bottom:  0.2vw solid #fad643;
+    }
+
+    .enter-player-info{
+        position: absolute;
+        height: 30vw;
+        width: 30vw;
+        left: 35%;
+        top: 35%;
+        opacity: 0.2;
+        background-color:#a8dadc;
+        display: flex;
+        justify-content: center;
+        font-size: 1.3vw;
+        border-bottom-right-radius: 2%;
+        border-bottom-left-radius: 2%;
+        color:#191919;
+        z-index: 10;
+
     }
     
     .game-space{
@@ -197,6 +216,7 @@ body{
         height: 90%;
         width:  100%;
         border-radius: 2%;
+        position: relative;
     }
     
     
@@ -213,8 +233,107 @@ body{
         align-items: center;
         font-size: 4vw;
         color: bisque;
-        box-shadow: inset;
+        
     }
+
+    .row{
+        position: absolute;
+        width: 100%;
+        height: 25vw;
+        /* background-color: pink; */
+        display: flex;
+        justify-content: space-evenly;
+        display: none;
+
+    }
+
+    .line{
+        height: 90%;
+        width: 0.2vw;
+        margin-top: 4%;
+        border-radius: 50%;
+        background-color: #fff;
+
+    }
+
+    #row-line1{
+        right: 8%;
+        position: relative;
+    }
+
+    #row-line3{
+        left: 8%;
+        position: relative;
+    }
+
+    
+    .col{
+        position: absolute;
+        /* background-color: pink; */
+        height: 25vw;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        display: none;
+
+    }
+
+    .line-col{
+        height: 0.2vw;
+        width: 90%;
+        margin-left: 4%;
+        border-radius: 50%;
+        background-color: #fff;
+    }
+
+    #col-line1{
+        bottom: 6%;
+        position: relative;
+    }
+
+    #col-line3{
+        top: 7%;
+        position: relative;
+    }
+
+    .diagonal{
+        position: absolute;
+        height: 25vw;
+        width: 80%;
+        /* background-color: pink; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+
+    }
+
+    #dia-line1{
+        position: absolute;
+        height: 120%;
+        border-radius: 50%;
+        background-color: #fff;
+
+        transform: rotate(45deg);
+        width: 0.2vw;
+
+    }
+
+
+    #dia-line2{
+        position: absolute;
+        height: 120%;
+        background-color: #fff;
+        border-radius: 50%;
+        transform: rotate(-45deg);
+        width: 0.2vw;
+
+    }
+
+
+    
+
     
     
     .myname{
@@ -278,6 +397,24 @@ body{
         border-bottom:  0.5vw solid #fad643;
     }
     
+    .enter-player-info{
+        position: absolute;
+        height: 58vw;
+        width: 60vw;
+        left: 20%;
+        top: 48%;
+        border-bottom-left-radius: 2%;
+        border-bottom-right-radius: 2%;
+        opacity: 0.2;
+        background-color:#a8dadc;
+        display: flex;
+        justify-content: center;
+        font-size: 2.5vw;
+        color:#191919;
+        z-index: 10;
+
+    }
+
     .game-space{
         height: 100%;
         width: 100%;
@@ -427,6 +564,7 @@ body{
         height: 90%;
         width:  100%;
         border-radius: 2%;
+        position: relative;
     }
     
     
@@ -445,6 +583,102 @@ body{
         color: bisque;
         box-shadow: inset;
     }
+
+
+    .row{
+        position: absolute;
+        width: 100%;
+        height: 50vw;
+        /* background-color: pink; */
+        display: flex;
+        justify-content: space-evenly;
+        display: none;
+
+    }
+
+    .line{
+        height: 90%;
+        width: 0.6vw;
+        border-radius: 50%;
+        margin-top: 4%;
+        background-color: #fff;
+
+    }
+
+    #row-line1{
+        right: 8%;
+        position: relative;
+    }
+
+    #row-line3{
+        left: 8%;
+        position: relative;
+    }
+
+    
+    .col{
+        position: absolute;
+        /* background-color: pink; */
+        height: 50vw;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        display: none;
+
+    }
+
+    .line-col{
+        height: 0.6vw;
+        width: 90%;
+        background-color: #fff;
+        border-radius: 50%;
+        margin-left: 4%;
+    }
+
+    #col-line1{
+        bottom: 6%;
+        position: relative;
+    }
+
+    #col-line3{
+        top: 7%;
+        position: relative;
+    }
+
+    .diagonal{
+        position: absolute;
+        height: 50vw;
+        width: 80%;
+        /* background-color: pink; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+
+    }
+
+    #dia-line1{
+        position: absolute;
+        height: 120%;
+        background-color: #fff;
+        border-radius: 50%;
+        transform: rotate(45deg);
+        width: 0.6vw;
+
+    }
+
+
+    #dia-line2{
+        position: absolute;
+        height: 120%;
+        background-color: #fff;
+        border-radius: 50%;
+        transform: rotate(-45deg);
+        width: 0.6vw;
+
+    }
+
     
     
     .myname{

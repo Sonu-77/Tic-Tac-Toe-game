@@ -1,3 +1,9 @@
+const info = document.querySelector(".enter-player-info")
+
+info.addEventListener("click",(e)=>{
+    info.innerHTML="<p>Please Enter Player-X & Player-O Name</p>"
+})
+
 const form = document.querySelector("form")
 
 form.addEventListener("submit",(e)=>{
@@ -10,7 +16,9 @@ form.addEventListener("submit",(e)=>{
     const submit =document.querySelector("#submit")
 
     submit.disabled=true
+    info.style.display="none"
     restart.style.display="block"
+
 
 
 
@@ -63,18 +71,20 @@ form.addEventListener("submit",(e)=>{
 
             if (positionVal0 !="" && positionVal1 !="" && positionVal2 != "") {
                 if (positionVal0==positionVal1 && positionVal1==positionVal2) {
-                    if (positionVal0 && positionVal1 && positionVal2 =="X") {
+                    if (positionVal0=="X" && positionVal1=="X" && positionVal2 =="X") {
                         winner.style.display="block"
                         winner.innerHTML=`Winner of the match is Player-X  ${player1name}!`
                         for (let box of buttons) {
                             box.disabled=true
                         }
-                    }else{
+                        return
+                    }else if(positionVal0=="O" && positionVal1=="O" && positionVal2 =="O"){
                         winner.style.display="block"
                         winner.innerHTML=`Winner of the match is Player-O  ${player2name}!`
                         for (let box of buttons) {
                             box.disabled=true
                         }
+                        return
                     }
                     // console.log(`Winner is declared`)
                 }
