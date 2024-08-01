@@ -240,7 +240,6 @@ body{
         position: absolute;
         width: 100%;
         height: 25vw;
-        /* background-color: pink; */
         display: flex;
         justify-content: space-evenly;
         display: none;
@@ -249,27 +248,37 @@ body{
 
     .line{
         height: 90%;
-        width: 0.2vw;
+        width: 0.4vw;
         margin-top: 4%;
         border-radius: 50%;
-        background-color: #fff;
+        background-color: #a2d2ff;
+
 
     }
 
     #row-line1{
         right: 8%;
         position: relative;
+
+        opacity: 0;
+
+    }
+
+    #row-line2{
+
+        opacity: 0;
+
     }
 
     #row-line3{
         left: 8%;
         position: relative;
+        opacity: 0;
     }
 
     
     .col{
         position: absolute;
-        /* background-color: pink; */
         height: 25vw;
         width: 90%;
         display: flex;
@@ -280,28 +289,40 @@ body{
     }
 
     .line-col{
-        height: 0.2vw;
+        height: 0.4vw;
         width: 90%;
         margin-left: 4%;
         border-radius: 50%;
-        background-color: #fff;
+        background-color: #a2d2ff;
+
     }
 
     #col-line1{
         bottom: 6%;
         position: relative;
+        opacity: 0; 
+
+
+    }
+
+    #col-line2{
+
+        opacity: 0; 
+
     }
 
     #col-line3{
         top: 7%;
         position: relative;
+        opacity: 0; 
+
+
     }
 
     .diagonal{
         position: absolute;
         height: 25vw;
         width: 80%;
-        /* background-color: pink; */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -312,11 +333,11 @@ body{
     #dia-line1{
         position: absolute;
         height: 120%;
+        width: 0.4vw;
         border-radius: 50%;
-        background-color: #fff;
-
+        background-color: #a2d2ff;
         transform: rotate(45deg);
-        width: 0.2vw;
+        opacity: 0; 
 
     }
 
@@ -324,11 +345,11 @@ body{
     #dia-line2{
         position: absolute;
         height: 120%;
-        background-color: #fff;
+        width: 0.4vw;
+        background-color: #a2d2ff;
         border-radius: 50%;
         transform: rotate(-45deg);
-        width: 0.2vw;
-
+        opacity: 0; 
     }
 
 
@@ -418,7 +439,6 @@ body{
     .game-space{
         height: 100%;
         width: 100%;
-        /* background-color: #1b6f28; */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -430,7 +450,6 @@ body{
     .player-space form{
         height: 20vw;
         width: 100%;
-        /* background-color: blue; */
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -441,10 +460,8 @@ body{
     
     .input-space{
         display: flex;
-        /* background-color: #fff; */
         gap: 10%;
         margin-right: 10%;
-        /* margin-right: 2%; */
     }
     
     .player{
@@ -462,9 +479,6 @@ body{
         font-weight: 600;
         font-family: 'Playfair Display','Times New Roman', Times, serif;
     }
-    /* #player1{
-        margin-right: 5%;
-    } */
     
     .player::placeholder{
         color: #788264;
@@ -476,7 +490,6 @@ body{
     
     #submit{
         margin-top:6%;
-        /* margin-bottom: 1%; */
         height:5vw;
         width: 15vw;   
         background-color: #5e503f;
@@ -495,7 +508,6 @@ body{
     }
     
     .declare-winner{
-        /* background-color: aqua; */
         text-align: center;
         padding-top: 0.5%;
         font-size: 5vw;
@@ -518,11 +530,12 @@ body{
         align-items: center;
         justify-content: flex-start;
         margin-top: 5%;
+        border: 0.1vw solid #03045e;
+        /* box-shadow: 3vw 3vw 3vw  #463f3a; */
     
     }
     
     .head-bar{
-    
         height: 9vw;
         width: 100%;
         display: flex;
@@ -532,24 +545,25 @@ body{
     
     .head-bar i{
         font-size: 5vw;
-        padding-left: 2%;
+        padding-left: 4%;
         color: bisque;
     }
     
     #restart{
-        box-shadow: 0.5vw 0.5vw 0.5vw 0.3vw gray;
+        box-shadow: 0.4vw 0.4vw 0.3vw 0.2vw gray;
         font-size: 3vw;
         font-weight: 700;
-        height: 6vw;
+        height: 5.5vw;
         width: 12vw;
-        border-radius: 1vw;
+        border-radius: 1.2vw;
         background-color: blanchedalmond;
         margin-top: 3%;
         display: none;
-        margin-right: 2%;
+        margin-right: 4%;
         margin-bottom: 1%;
-        /* border: 0.2vw solid #070707; */
         color: #91785d;
+        border: 0.2vw solid #d4a373;
+
     }
     
     #restart:hover{
@@ -574,14 +588,15 @@ body{
         width: 16vw;
         background-color: #5e503f;
         /* box-shadow: 10px 10px 10px 2px gray; */
-        box-shadow: 0.9vw 0.7vw 0.9vw 0.4vw gray;
-        border-radius: 10%;
+        box-shadow: 0.9vw 0.7vw 0.9vw 0.4vw  gray;
+        border-radius: 15%;
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 8vw;
         color: bisque;
-        box-shadow: inset;
+        /* box-shadow: inset; */
+        border: 0.2vw solid #dad7cd;
     }
 
 
@@ -598,10 +613,10 @@ body{
 
     .line{
         height: 90%;
-        width: 0.6vw;
+        width: 0.9vw;
         border-radius: 50%;
         margin-top: 4%;
-        background-color: #fff;
+        background-color: #606c38;
 
     }
 
@@ -629,20 +644,20 @@ body{
     }
 
     .line-col{
-        height: 0.6vw;
+        height: 0.9vw;
         width: 90%;
-        background-color: #fff;
+        background-color:  #606c38;
         border-radius: 50%;
-        margin-left: 4%;
+        margin-left: 4.5%;
     }
 
     #col-line1{
-        bottom: 6%;
+        bottom: 5%;
         position: relative;
     }
 
     #col-line3{
-        top: 7%;
+        top: 4%;
         position: relative;
     }
 
@@ -650,7 +665,6 @@ body{
         position: absolute;
         height: 50vw;
         width: 80%;
-        /* background-color: pink; */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -660,22 +674,22 @@ body{
 
     #dia-line1{
         position: absolute;
-        height: 120%;
-        background-color: #fff;
+        height: 130%;
+        background-color:  #606c38;
         border-radius: 50%;
         transform: rotate(45deg);
-        width: 0.6vw;
+        width: 0.9vw;
 
     }
 
 
     #dia-line2{
         position: absolute;
-        height: 120%;
-        background-color: #fff;
+        height: 130%;
+        background-color:  #606c38;
         border-radius: 50%;
         transform: rotate(-45deg);
-        width: 0.6vw;
+        width: 0.9vw;
 
     }
 
