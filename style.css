@@ -68,7 +68,8 @@ body{
         font-size: 1.3vw;
         border-bottom-right-radius: 2%;
         border-bottom-left-radius: 2%;
-        color:#191919;
+        color:#f54305;
+        font-weight: 700;
         z-index: 10;
 
     }
@@ -179,7 +180,7 @@ body{
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: flex-end;
     }
     
     .head-bar i{
@@ -198,7 +199,7 @@ body{
         background-color: blanchedalmond;
         margin-top: 3%;
         display: none;
-        margin-right: 2%;
+        margin-right: 4%;
         margin-bottom: 1%;
         border: 1.2px solid #070707;
         color: #91785d;
@@ -426,12 +427,13 @@ body{
         top: 48%;
         border-bottom-left-radius: 2%;
         border-bottom-right-radius: 2%;
-        opacity: 0.2;
+        opacity: 0.5;
         background-color:#a8dadc;
         display: flex;
         justify-content: center;
-        font-size: 2.5vw;
-        color:#191919;
+        align-items: center;
+        font-size: 3vw;
+        color:#f54305;
         z-index: 10;
 
     }
@@ -473,10 +475,11 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
-        color: #001d3d;
+        color: #b7b5b5;
         text-align: center;
         font-size: 4vw;
         font-weight: 600;
+        outline: none;
         font-family: 'Playfair Display','Times New Roman', Times, serif;
     }
     
@@ -498,9 +501,9 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
-        color: #413026;
+        color: #d0cfcd;
         font-size: 3vw;
-        font-weight: 900;
+        font-weight: 700;
     }
 
     #submit:hover{
@@ -540,7 +543,7 @@ body{
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: flex-end;
     }
     
     .head-bar i{
@@ -616,7 +619,7 @@ body{
         width: 0.9vw;
         border-radius: 50%;
         margin-top: 4%;
-        background-color: #606c38;
+        background-color: #44f505;
 
     }
 
@@ -646,7 +649,7 @@ body{
     .line-col{
         height: 0.9vw;
         width: 90%;
-        background-color:  #606c38;
+        background-color:  #44f505;
         border-radius: 50%;
         margin-left: 4.5%;
     }
@@ -675,7 +678,7 @@ body{
     #dia-line1{
         position: absolute;
         height: 130%;
-        background-color:  #606c38;
+        background-color:  #44f505;
         border-radius: 50%;
         transform: rotate(45deg);
         width: 0.9vw;
@@ -686,7 +689,7 @@ body{
     #dia-line2{
         position: absolute;
         height: 130%;
-        background-color:  #606c38;
+        background-color:  #44f505;
         border-radius: 50%;
         transform: rotate(-45deg);
         width: 0.9vw;
